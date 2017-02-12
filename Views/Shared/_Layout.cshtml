@@ -8,21 +8,26 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <header role="banner">
+        <div class="mainHeader">
+            <h1>Worldly Reviews</h1>
+            <p>Providing you coverage and recommendations on the technology that helps you live your life.</p>
+        </div>
+    </header>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="navbar-brand" href="#">Worldly Reviews</a>
             </div>
+            <ul class="nav navbar-nav">
+                <li><a href="http://localhost:55836/Reviews/Index#">Reviews</a></li>
+                <li><a href="http://localhost:55836/Reviews/Index#">Categories</a></li>
+            </ul>
+        </div>
+    </nav>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                  
                 </ul>
             </div>
         </div>
@@ -31,7 +36,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Brought to You By: Worldly Reviews, currently under construction for a sexier user experience.</p>
         </footer>
     </div>
 

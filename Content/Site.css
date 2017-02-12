@@ -1,6 +1,10 @@
 ﻿body {
+    color: black;
+    font-weight:bold;
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: rgb(0, 0, 0, 0.6);
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +26,18 @@ select,
 textarea {
     max-width: 280px;
 }
+.mainheader {
+    text-align: center;
+    color:darkslategrey;
+    background-color: wheat;
+
+}
+
+body {
+    background-image: url('MVC Project Picture.jpg');
+}
+
+navbar {
+    color: dimgrey;
+}
+
